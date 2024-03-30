@@ -5,6 +5,16 @@
  background-color: #1F2326;
 }
 
+.agent-card::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 25px solid #FF4656; /* Color de la esquina y altura */
+    border-right: 25px solid transparent; /* Ancho de la esquina */
+    width: 0;
+}
+
 /* .agent-card::after{
     content: attr(data-name);
     color:transparent;
@@ -14,16 +24,17 @@
     font-size: 60px;
     rotate: 90deg;
     -webkit-text-stroke: 1px white; 
-}
+} */
 
 .agent-card::before{
     content: attr(data-country);
     color:#FF4656;
     position: absolute;
     top: 10%;
+    left: 0;
     font-size: 60px;
     rotate: 90deg;
-} */
+}
 
 .agent-card > img {
     width:100%;
@@ -43,4 +54,10 @@
 
 .agent-card-background{
     z-index: 1;
+}
+
+.agent-card-name{
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
 }

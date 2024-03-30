@@ -1,5 +1,6 @@
 import data from '@/mocks/agents.json';
 import { AgentCard } from '../components/agentCard/AgentCard';
+import { AgentAbilities } from '../components/agentAbilities/AgentAbilities';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
                 agentBackgroundImg={value.fullPortraitV2}
                 background={value.background}
               />
+              <AgentAbilities abilities={value.abilities}/>
             </div>
           );
         })}

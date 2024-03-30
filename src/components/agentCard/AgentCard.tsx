@@ -11,10 +11,10 @@ export function AgentCard({name,country,agentBackgroundImg,background}:AgentCard
   const formattedImaged = agentBackgroundImg || "hero.jpg"
 
   return (
-    <div className="agent-card" data-name={name} data-country={country}>
+    <section className="agent-card">
       <img className="agent-card-background__person" src={formattedImaged} alt={name} />
       <img className="agent-card-background" src={background || ""} alt="" />
-      <h2 style={{ color:"red"}}>{name}</h2>
-    </div>
+      <h2 className="agent-card-name">{name}</h2>
+    </section>
   );
 }
