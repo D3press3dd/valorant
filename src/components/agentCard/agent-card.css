@@ -1,0 +1,46 @@
+.agent-card{
+ width: 512px;
+ height: 1025px;
+ position: relative;
+ background-color: #1F2326;
+}
+
+/* .agent-card::after{
+    content: attr(data-name);
+    color:transparent;
+    position: absolute;
+    top: 10%;
+    left: 10px;
+    font-size: 60px;
+    rotate: 90deg;
+    -webkit-text-stroke: 1px white; 
+}
+
+.agent-card::before{
+    content: attr(data-country);
+    color:#FF4656;
+    position: absolute;
+    top: 10%;
+    font-size: 60px;
+    rotate: 90deg;
+} */
+
+.agent-card > img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.agent-card-background__person{
+    z-index: 2;
+    transition: transform ease-in-out .2s;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+.agent-card-background{
+    z-index: 1;
+}
